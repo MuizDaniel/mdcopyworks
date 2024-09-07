@@ -1,199 +1,142 @@
-/* Global Styles */
+:root {
+    --olive-green: #556B2F;
+    --beige: #F5F5DC;
+    --warm-neutral: #D2B48C;
+    --dark-text: #333;
+    --light-text: #FFF;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    color: var(--dark-text);
+    background-color: var(--beige);
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
 }
 
-.container {
-    width: 85%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Header Styles */
 header {
-    background: #1e2a38; /* Darker blue-gray */
-    color: #ffffff;
-    padding: 20px 0;
-    min-height: 80px;
-    border-bottom: #0077be 4px solid; /* Slightly thicker border */
+    background-color: var(--olive-green);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-header a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold; /* Emphasizes text */
-}
-
-header ul {
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
     padding: 0;
-    list-style: none;
 }
 
-header li {
-    display: inline;
-    padding: 0 25px;
+nav ul li {
+    margin: 0 1rem;
 }
 
-header #branding {
-    float: left;
+nav ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: bold;
 }
 
-header #branding h1 {
-    margin: 0;
-    font-size: 24px;
+main {
+    max-width: 800px;
+    margin: 80px auto 0;
+    padding: 2rem;
 }
 
-header nav {
-    float: right;
-    margin-top: 10px;
+section {
+    margin-bottom: 3rem;
 }
 
-header a:hover {
-    color: #0077be; /* Matches the border color */
-    text-decoration: underline;
+h1, h2, h3 {
+    color: var(--olive-green);
 }
 
-/* Logo */
-.logo {
-    width: 180px; /* Larger logo */
-    height: auto;
-}
-
-/* Showcase */
-#showcase {
-    min-height: 400px;
-    background: url('showcase.jpg') no-repeat center center;
-    background-size: cover; /* Ensures the background covers the area */
+#hero {
     text-align: center;
-    color: #ffffff;
-    padding: 80px 0; /* Adds padding for better text visibility */
+    padding: 3rem 0;
 }
 
-#showcase h1 {
-    margin: 0;
-    font-size: 60px;
-    font-weight: bold; /* Stronger emphasis */
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
 }
 
-#showcase p {
-    font-size: 22px;
+#hero h2 {
+    font-size: 1.5rem;
+    color: var(--warm-neutral);
 }
 
-/* Newsletter */
-#newsletter {
-    padding: 20px;
-    color: #ffffff;
-    background: #1e2a38; /* Consistent with header */
+.job {
+    margin-bottom: 1.5rem;
 }
 
-#newsletter h1 {
-    float: left;
-    margin: 0;
+.date {
+    color: var(--warm-neutral);
+    font-style: italic;
 }
 
-#newsletter form {
-    float: right;
-    margin-top: 10px;
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
 }
 
-#newsletter input[type="email"] {
-    padding: 10px;
-    height: 40px;
-    width: 300px;
-    border-radius: 5px; /* Rounded corners */
-    border: 1px solid #0077be;
+#skills li {
+    background-color: var(--warm-neutral);
+    color: var(--dark-text);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 20px;
 }
 
-/* Boxes */
-#boxes {
-    margin-top: 30px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-#boxes .box {
-    float: left;
-    text-align: center;
-    width: 30%;
-    padding: 20px;
-    margin: 10px;
-    background: #ffffff;
-    border: 1px solid #e0e0e0; /* Light gray border for subtle distinction */
-    border-radius: 10px; /* Rounded corners */
+input, textarea, button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--warm-neutral);
+    border-radius: 4px;
 }
 
-#boxes .box img {
-    width: 100px;
+button {
+    background-color: var(--olive-green);
+    color: var(--light-text);
+    cursor: pointer;
+    border: none;
+    padding: 0.75rem;
 }
 
-/* Sidebar */
-aside#sidebar {
-    float: right;
-    width: 30%;
-    margin-top: 10px;
+button:hover {
+    background-color: var(--warm-neutral);
+    color: var(--dark-text);
 }
 
-/* Main-col */
-article#main-col {
-    float: left;
-    width: 65%;
-}
-
-/* Services */
-ul#services li {
-    list-style: none;
-    padding: 15px;
-    border: 1px solid #e0e0e0;
-    margin-bottom: 10px;
-    background: #ffffff;
-    border-radius: 5px; /* Rounded corners */
-}
-
-/* Footer */
 footer {
-    padding: 20px;
-    margin-top: 30px;
-    color: #ffffff;
-    background-color: #0077be; /* Matches header border */
     text-align: center;
+    padding: 1rem;
+    background-color: var(--olive-green);
+    color: var(--light-text);
 }
 
-/* Media Queries */
-@media(max-width: 768px) {
-    header #branding,
-    header nav,
-    header nav li,
-    #newsletter h1,
-    #newsletter form,
-    #boxes .box,
-    article#main-col,
-    aside#sidebar {
-        float: none;
-        text-align: center;
-        width: 100%;
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    header {
-        padding-bottom: 20px;
+    nav ul li {
+        margin: 0.5rem 0;
     }
 
-    #showcase h1 {
-        margin-top: 40px;
-        font-size: 40px; /* Adjusted for smaller screens */
-    }
-
-    #newsletter button, .quote button {
-        display: block;
-        width: 100%;
-    }
-
-    #newsletter form input[type="email"], .quote input, .quote textarea {
-        width: 100%;
-        margin-bottom: 10px;
+    #skills ul {
+        justify-content: center;
     }
 }
