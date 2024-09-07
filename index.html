@@ -1,59 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD Copyworks - Professional Email Copywriting Services</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <img src="logo.png" alt="MD Copyworks Logo" class="logo">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+:root {
+    --olive-green: #556B2F;
+    --beige: #F5F5DC;
+    --warm-neutral: #D2B48C;
+    --dark-text: #333;
+    --light-text: #FFF;
+}
 
-    <main>
-        <section id="home">
-            <h1>Welcome to MD Copyworks</h1>
-            <p>Professional email copywriting services to boost your business</p>
-            <a href="#contact" class="cta-button">Get a Quote</a>
-        </section>
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background-color: var(--beige);
+    margin: 0;
+    padding: 0;
+}
 
-        <section id="about">
-            <h2>About Muiz Daniel</h2>
-            <img src="muiz-daniel.jpg" alt="Muiz Daniel" class="profile-photo">
-            <p>Muiz Daniel is a seasoned email copywriter with years of experience crafting compelling messages that drive results.</p>
-        </section>
+header {
+    background-color: var(--olive-green);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Email Campaign Copywriting</li>
-                <li>Newsletter Content Creation</li>
-                <li>Email Sequence Optimization</li>
-            </ul>
-        </section>
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+nav ul li {
+    margin: 0 1rem;
+}
 
-    <footer>
-        <p>&copy; 2024 MD Copyworks. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+nav ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 80px auto 0;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h1, h2, h3 {
+    color: var(--olive-green);
+}
+
+#hero {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+#hero h2 {
+    font-size: 1.5rem;
+    color: var(--warm-neutral);
+}
+
+.job {
+    margin-bottom: 1.5rem;
+}
+
+.date {
+    color: var(--warm-neutral);
+    font-style: italic;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+}
+
+#skills li {
+    background-color: var(--warm-neutral);
+    color: var(--dark-text);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--warm-neutral);
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--olive-green);
+    color: var(--light-text);
+    cursor: pointer;
+    border: none;
+    padding: 0.75rem;
+}
+
+button:hover {
+    background-color: var(--warm-neutral);
+    color: var(--dark-text);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--olive-green);
+    color: var(--light-text);
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    #skills ul {
+        justify-content: center;
+    }
+}
