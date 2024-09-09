@@ -3,91 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Your Name - Professional Copywriter</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Professional copywriting services by Your Name. Enhance your brand with compelling copy.">
+    <title>Akmal Afnan - Professional Counseling Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #000;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #fff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('/api/placeholder/1200/400') no-repeat center;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #main {
+            margin-top: 20px;
+        }
+        .service-box {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
+        #testimonials {
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .testimonial {
+            margin-bottom: 20px;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #000;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#what-is-copywriting">What is Copywriting</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="user-actions">
-            <button id="login-btn">Login</button>
-            <button id="signup-btn">Sign Up</button>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Akmal Afnan</span> Counseling</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <h1>Your Name</h1>
-            <h2>Professional Copywriter</h2>
-            <p>Crafting words that sell, persuade, and inspire.</p>
-        </section>
+    <section id="showcase">
+        <div class="container">
+            <h1>Professional Counseling Services</h1>
+            <p>Empowering you to achieve mental well-being and personal growth</p>
+        </div>
+    </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Your compelling introduction goes here. Make it engaging and persuasive.</p>
-        </section>
+    <section id="main">
+        <div class="container">
+            <h2>Welcome to Akmal Afnan Counseling</h2>
+            <p>With years of experience and a commitment to excellence, Akmal Afnan provides professional counseling services to help you navigate life's challenges and achieve mental well-being.</p>
+        </div>
+    </section>
 
-        <section id="resume">
-            <h2>My Resume</h2>
-            <p>Highlight your work experience, education, and skills in a clear and concise manner.</p>
-            <!-- Add your resume details here -->
-        </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Akmal Afnan</h2>
+            <p>Akmal Afnan is a licensed counselor with over 10 years of experience in the field of mental health. He holds a Master's degree in Clinical Psychology and is certified in various therapeutic approaches. Akmal's compassionate and client-centered approach has helped numerous individuals overcome personal challenges and achieve their goals.</p>
+        </div>
+    </section>
 
-        <section id="what-is-copywriting">
-            <h2>What is Copywriting?</h2>
-            <p>Copywriting is the art and science of crafting compelling text that motivates action, builds brand loyalty, and converts prospects into clients.</p>
-        </section>
-
-        <section id="benefits">
-            <h2>Benefits of Copywriting</h2>
-            <ul>
-                <li>Increased conversions</li>
-                <li>Enhanced brand voice</li>
-                <li>Improved customer engagement</li>
-                <li>More effective marketing strategies</li>
-            </ul>
-        </section>
-
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Showcase your best work here to impress potential clients.</p>
-            <!-- Add your portfolio items here -->
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <div class="contact-info">
-                <p>Email: your.email@example.com</p>
-                <p>WhatsApp: +1234567890</p>
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-box">
+                <h3>Mental Health Support</h3>
+                <p>Comprehensive support for various mental health concerns, including anxiety, depression, and stress management.</p>
             </div>
-        </section>
-    </main>
+            <div class="service-box">
+                <h3>Relationship Counseling</h3>
+                <p>Guidance for couples and individuals seeking to improve their relationships and communication skills.</p>
+            </div>
+            <div class="service-box">
+                <h3>Career Counseling</h3>
+                <p>Support in navigating career challenges, making important decisions, and achieving professional goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial">
+                <p>"Akmal's counseling has been life-changing. His insights and support helped me overcome my anxiety and regain confidence."</p>
+                <p>- Sarah M.</p>
+            </div>
+            <div class="testimonial">
+                <p>"I'm grateful for Akmal's guidance in improving my relationship. His approach is both professional and compassionate."</p>
+                <p>- John D.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: akmal.afnan@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Follow us on social media:</p>
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+        </div>
+    </section>
 
     <footer>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://www.instagram.com/yourname" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </div>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Akmal Afnan Counseling. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
